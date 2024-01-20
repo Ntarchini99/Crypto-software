@@ -11,7 +11,7 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setClick(false); // Cierra el menú después de hacer clic en un enlace
+      setClick(false); 
     }
   };
 
