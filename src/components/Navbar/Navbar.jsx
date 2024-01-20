@@ -3,36 +3,54 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
-	const [click, setClick] = useState(false);
-	const handleClick = () => setClick(!click);
+  const [click, setClick] = useState(false);
 
-	return (
-		<div className="header">
-			<div className="container">
-				<h1 className='Text-nav'>
-					Crypto <span className="primary">Software</span>
-				</h1>
-				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/">Featured</a>
-					</li>
-					<li>
-						<a href="/">Earn</a>
-					</li>
-					<li>
-						<a href="/">Contact</a>
-					</li>
-				</ul>
+  const handleClick = () => setClick(!click);
 
-				<div className="hamburger" onClick={handleClick}>
-					{click ? <FaTimes size={20} style={{ color: '#333333' }} /> : <FaBars size={20} style={{ color: '#333333' }} />}
-				</div>
-			</div>
-		</div>
-	);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="header">
+      <div className="container">
+        <h1 className="Text-nav">Crypto Software</h1>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li>
+            <a href="#home" onClick={() => scrollToSection('Home')}>
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#values" onClick={() => scrollToSection('Values')}>
+              Valores
+            </a>
+          </li>
+          <li>
+            <a href="#crypto" onClick={() => scrollToSection('Crypto')}>
+              Crypto
+            </a>
+          </li>
+          <li>
+            <a href="#contacto" onClick={() => scrollToSection('contacto')}>
+              Contacto
+            </a>
+          </li>
+        </ul>
+
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={20} style={{ color: '#333333' }} />
+          ) : (
+            <FaBars size={20} style={{ color: '#333333' }} />
+          )}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

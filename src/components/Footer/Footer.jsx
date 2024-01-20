@@ -4,11 +4,11 @@ import './Footer.css';
 
 const Footer = () => {
 	return (
-		<div className="footer">
+		<div className="footer" id='Contacto'>
 			<div className="container">
 				<div className="col col-1">
 					<h1>
-						De<span className="primary">Fi</span>
+						Crypto
 					</h1>
 				</div>
 				<div className="col">

@@ -3,12 +3,12 @@ import './Hero.css';
 
 const Hero = () => {
 	return (
-		<div className="hero">
+		<div className="hero" id='Home'>
 			<div className="container">
 				<div className="left">
-					<p>Buy & Sell Crypto 24/7 using your retirement account</p>
-					<h1>Invest in Cryptocurreny with Your IRA</h1>
-					<p>Buy, Sell, and store hundreds of cryptocurrencies</p>
+					<p className='p-left'>Compre y venda criptomonedas las 24 horas del día</p>
+					<h1><span className='invierta'>Invierta</span> en <span className='span-crypto'>criptomonedas</span> con su IRA</h1>
+					<p className='p-left'>Compra, vende y almacena cientos de criptomonedas</p>
 				</div>
 
 				<div className="right">

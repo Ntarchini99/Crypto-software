@@ -6,11 +6,7 @@
 }
 
 .Text-nav{
-	font-size: 2.8rem;
-}
-.primary {
-	color: #08aeea;
-	font-size: 2.8rem;
+	font-size: 2.5rem;
 }
 
 * {
@@ -37,6 +33,7 @@ body {
 	font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: black;
 }
 
 code {
@@ -46,20 +43,24 @@ code {
 h1 {
 	font-size: 3.5rem;
 	line-height: 1.2;
+	color: #f5f8ff;
 }
 
 h2 {
 	font-size: 2.4rem;
 	line-height: 1.2;
+	color: #f5f8ff;
 }
 
 h5 {
 	font-size: 1.1rem;
 	line-height: 1.2;
+	color: #f5f8ff;
 }
 
 p {
 	font-size: 1.2rem;
+	color: #f5f8ff;
 }
 
 .btn {
@@ -75,16 +76,6 @@ p {
 
 .btn:hover {
 	box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
-}
-
-input {
-	padding: 12px 32px;
-	border: 1px solid var(--primary);
-	background: transparent;
-	border-radius: 24px 4px;
-	font-size: 1rem;
-	margin-right: 0.8rem;
-	font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
