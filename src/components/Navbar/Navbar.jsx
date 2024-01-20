@@ -11,13 +11,14 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setClick(false); // Cierra el menú después de hacer clic en un enlace
     }
   };
 
   return (
     <div className="header">
       <div className="container">
-        <h1 className="Text-nav">Crypto Software</h1>
+        <h1 className="Text-nav">Crypto's</h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
             <a href="#home" onClick={() => scrollToSection('Home')}>
@@ -35,7 +36,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#contacto" onClick={() => scrollToSection('contacto')}>
+            <a href="#contacto" onClick={() => scrollToSection('Contacto')}>
               Contacto
             </a>
           </li>

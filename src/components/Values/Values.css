@@ -54,6 +54,7 @@
 .featured .card .top {
 	display: flex;
 	flex-direction: column;
+	margin-top: 20%;
 }
 
 .featured .right img {
@@ -71,7 +72,7 @@
 }
 
 .featured span {
-	font-size: 22px;
+	font-size: 19px;
 }
 
 .green {
@@ -158,6 +159,12 @@
 
 	.featured .left .btn {
 		align-self: center;
+	}
+	
+	.featured .card .top {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10%;
 	}
 }
 

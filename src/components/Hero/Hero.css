@@ -6,6 +6,7 @@
 	align-items: center;
 	padding: 1rem;
 	margin-top: 5%;
+	overflow-x: hidden;
 }
 
 .hero .left {

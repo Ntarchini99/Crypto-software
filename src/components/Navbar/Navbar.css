@@ -44,7 +44,7 @@
 	}
 
 	.nav-menu {
-		position: absolute;
+		position: fixed;
 		flex-direction: column;
 		justify-content: start;
 		top: 90px;
@@ -69,5 +69,6 @@
 
 	.nav-menu a {
 		font-size: 1.2rem;
+		color: black;
 	}
 }
