@@ -23,13 +23,12 @@ const Feature = () => {
 	return (
 		<div className="featured" id='Values'>
 			<div className="container">
-				{/* left section start */}
 				<div className="left">
 					<h2>Explore las principales criptomonedas como Bitcoin, Ethereum y Dogecoin</h2>
 					<p>Ver todos los activos disponibles: Criptomonedas y NFT</p>
 					<a href="https://es.tradingview.com/" target='blank'>
 						<button class="button">
-						VER GRÁFICOS
+							VER GRÁFICOS
 							<svg fill="currentColor" viewBox="0 0 24 24" class="icon">
 								<path
 									clip-rule="evenodd"
